@@ -6,18 +6,18 @@ import './App.css'
 
 function App() {
 
-  const mensaje = "Bienvenida"
- 
+  const mensaje = "Bienvenidxs a e-commerce"
+
 
   return (
     <>
       <Navbar />
-    <Routes>
-      <Route path="/" element={<ItemListContainer welcome={mensaje} />} />
-      <Route path="/category/:id" element={<ItemListContainer/>}/>
-      <Route path="/item/:id" element={<ItemDetailContainer/>}/>
-    </Routes>
-    
+      <Routes>
+        <Route path="/" element={<ItemListContainer welcome={mensaje} />} />
+        <Route path="/category/:category" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+      </Routes>
+
     </>
   )
 }
